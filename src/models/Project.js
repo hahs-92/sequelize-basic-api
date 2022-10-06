@@ -33,4 +33,5 @@ Project.hasMany(Task, {
 Task.belongsTo(Project, {
   foreignKey: "projectId",
   targetKey: "id",
+  // onDelete: "CASCADE",
 });

@@ -16,7 +16,7 @@ async function main() {
     // await sequelize.authenticate();
     // hace una sincronizacion con la DB
     //si no existe una tabla nos crea una llamda projects
-    await sequelize.sync({ force: false }); //{force: true} elimina la tabla si existe;
+    await sequelize.sync(); //{force: true} elimina la tabla si existe;
     app.listen(PORT);
     console.log(`Listening in the port: ${PORT}`);
   } catch (error) {
